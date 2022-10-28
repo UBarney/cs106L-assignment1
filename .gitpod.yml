@@ -7,5 +7,5 @@ tasks:
     init: sudo apt update && sudo apt install -y cmake
     
   - name: setUp
-    command: CC=/usr/bin/clang CXX=/usr/bin/clang++ ./setup.sh
+    command: ./setup.sh && cp build/compile_commands.json ../
 
